@@ -12,3 +12,9 @@ Verified on 21 September 2026 for the initial 0.1.0 release.
 - No browser console errors were observed during these checks.
 
 These checks cover the design system and its local demonstrations. They do not test a production Slang compiler, a real cloud deployment service, or complete assistive-technology conformance. See [accessibility](accessibility.md) for the tested contrast contracts and integration responsibilities.
+
+## Logo family, 0.2.0
+
+The nine logo assets were parsed as SVG and checked for embedded images, external resources, scripts, and live text. The eight transparent variants contain no background rectangle. Public package export paths resolve, and the production build emits downloadable SVG files. The existing six automated contracts and full build/package check pass.
+
+The logo gallery was checked at desktop and 390 px widths in both interface themes, with no horizontal page overflow or browser console errors. All preview images loaded, and the wordmark download completed through the browser. The logo preview in the documentation was rendered directly from the SVG paths.

@@ -1,0 +1,138 @@
+.brand-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.brand-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--sd-border);
+  border-radius: var(--sd-radius-md);
+  background: var(--sd-surface);
+}
+.brand-preview {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  padding: 58px 32px;
+}
+.brand-preview img {
+  display: block;
+  width: min(100%, 356px);
+  height: auto;
+}
+.brand-surface-light {
+  background: #fcfcfc;
+  color: #164968;
+}
+.brand-surface-dark {
+  background: #164968;
+  color: #edf5f8;
+}
+.brand-surface-charcoal {
+  background: #212124;
+  color: #fff;
+}
+.brand-specimen-label,
+.brand-specimen-foot {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.brand-specimen-label {
+  top: 22px;
+  font-family: var(--sd-font-code);
+  letter-spacing: 1px;
+}
+.brand-specimen-foot {
+  bottom: 22px;
+}
+.brand-downloads {
+  padding: 24px;
+  border-top: 1px solid var(--sd-border);
+}
+.brand-downloads h2,
+.brand-downloads h3 {
+  margin: 0 0 10px;
+  font: 300 24px/1.3 var(--sd-font-display);
+}
+.brand-downloads p {
+  margin: 0 0 20px;
+  font-size: 12px;
+}
+.brand-downloads > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.brand-principles,
+.brand-icon-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  margin: 60px 0;
+}
+.brand-page h2 {
+  font-size: 28px;
+}
+.brand-page p {
+  line-height: 1.8;
+}
+.brand-principles p,
+.brand-icon-section p,
+.brand-guidance li {
+  font-size: 13px;
+}
+.brand-preview-small {
+  min-height: 190px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.brand-icon-section {
+  align-items: center;
+}
+.brand-icon-samples {
+  overflow: hidden;
+  border: 1px solid var(--sd-border);
+  border-radius: var(--sd-radius-md);
+}
+.brand-icon-samples > div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 12px;
+  padding: 26px 20px 20px;
+}
+.brand-icon-samples > div > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  font: 10px var(--sd-font-code);
+}
+.brand-guidance {
+  margin-bottom: 28px;
+}
+.brand-guidance ul {
+  padding-left: 20px;
+  color: var(--sd-text-muted);
+  margin: 20px 0 24px;
+}
+.brand-guidance li + li {
+  margin-top: 12px;
+}
+@media (max-width: 980px) {
+  .brand-pair,
+  .brand-principles,
+  .brand-icon-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .brand-principles,
+  .brand-icon-section {
+    gap: 28px;
+    margin: 40px 0;
+  }
+}

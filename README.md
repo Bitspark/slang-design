@@ -8,18 +8,25 @@ Slang Design reconstructs the later Slang cloud and web identity: petrol blue, r
 
 ## Explore
 
-| View                                                                       | What it demonstrates                                                          |
-| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [Foundations](https://bitspark.github.io/slang-design/#/foundations)       | Color, typography, semantic data types, and the visual language               |
-| [Components](https://bitspark.github.io/slang-design/#/components)         | Actions, forms, feedback, type labels, flow canvas, and token export          |
-| [Origins & principles](https://bitspark.github.io/slang-design/#/heritage) | Source inventory, provenance, and design decisions                            |
-| [Product website](https://bitspark.github.io/slang-design/#/website)       | Diagram-led marketing and a clear first action                                |
-| [Operator library](https://bitspark.github.io/slang-design/#/library)      | Search, category filtering, empty states, and operator details                |
-| [Visual studio](https://bitspark.github.io/slang-design/#/studio)          | Selectable graph, inspector, editable inputs, calculation, and output console |
-| [Documentation](https://bitspark.github.io/slang-design/#/docs)            | Concepts, diagrams, reference tables, and in-page navigation                  |
-| [Cloud workspace](https://bitspark.github.io/slang-design/#/cloud)         | Metrics, deployment table, status, creation dialog, and local demo state      |
+| View                                                                       | What it demonstrates                                                             |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [Foundations](https://bitspark.github.io/slang-design/#/foundations)       | Color, typography, semantic data types, and the visual language                  |
+| [Components](https://bitspark.github.io/slang-design/#/components)         | Actions, forms, feedback, type labels, flow canvas, and token export             |
+| [Logo & brand](https://bitspark.github.io/slang-design/#/brand)            | Vector logos for light/dark surfaces, symbols, monochrome artwork, and downloads |
+| [Origins & principles](https://bitspark.github.io/slang-design/#/heritage) | Source inventory, provenance, and design decisions                               |
+| [Product website](https://bitspark.github.io/slang-design/#/website)       | Diagram-led marketing and a clear first action                                   |
+| [Operator library](https://bitspark.github.io/slang-design/#/library)      | Search, category filtering, empty states, and operator details                   |
+| [Visual studio](https://bitspark.github.io/slang-design/#/studio)          | Selectable graph, inspector, editable inputs, calculation, and output console    |
+| [Documentation](https://bitspark.github.io/slang-design/#/docs)            | Concepts, diagrams, reference tables, and in-page navigation                     |
+| [Cloud workspace](https://bitspark.github.io/slang-design/#/cloud)         | Metrics, deployment table, status, creation dialog, and local demo state         |
 
 The examples demonstrate interfaces, not a hosted Slang engine. Studio multiplication runs locally. Cloud actions only change fictional browser-local data. The actual language runtime and public playground live in [Bitspark/slang](https://github.com/Bitspark/slang) and [tryslang.com](https://tryslang.com/).
+
+## Logo assets
+
+![Slang logo on light and dark backgrounds](docs/images/logo-preview.png)
+
+[Preview the logo family](https://bitspark.github.io/slang-design/#/brand) or see the [logo guide](docs/logo.md). Nine SVG downloads include transparent light/dark logos and symbols, one-color artwork, and an app icon. Lettering is outlined, with no font dependency. Import assets through `@bitspark/slang-design/logo/*.svg`.
 
 ## Run locally
 
@@ -37,7 +44,7 @@ Open `http://127.0.0.1:5176`. `npm run build` produces a static `dist/` site. `n
 The package is available from this Git repository; it has not been published to the npm registry.
 
 ```sh
-npm install github:Bitspark/slang-design#v0.1.0
+npm install github:Bitspark/slang-design#v0.2.0
 ```
 
 ```js
@@ -64,7 +71,7 @@ tokens/tokens.json   Source of truth: primitives, dimensions, light/dark roles
 styles/             Generated CSS variables, fonts, scoped component recipes
 components/         Dependency-free custom elements and TypeScript declarations
 assets/             Brand mark, self-hosted fonts, and font licenses
-site/               Eight showcase views built from the shared system
+site/               Nine showcase views built from the shared system
 docs/               Research, usage, accessibility, and contribution guidance
 tests/              Contrast, focus, theme parity, and demo behavior contracts
 ```

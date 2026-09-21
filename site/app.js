@@ -1,10 +1,11 @@
 import '../styles/index.css';
 import './showcase.css';
 import './brand.css';
+import './website-logo.css';
 import '../components/index.js';
 import { operators, sources, filterOperators, calculate } from './data.js';
 import tokens from '../tokens/tokens.json';
-import mark from '../assets/slang-mark.svg';
+import { websiteLogo } from './website-logo.js';
 import { pages } from './pages.js';
 
 export const icon = (name) => {
@@ -108,7 +109,7 @@ document.documentElement.dataset.theme =
 
 function shell() {
   document.querySelector('#app').innerHTML =
-    `<div class="sd-scope app-shell"><aside class="sidebar" aria-label="Showcase navigation"><a class="brand" href="#/foundations"><img src="${mark}" width="34" height="34" alt=""/><span>slang<span class="brand-design">design</span></span></a><div class="sidebar-intro">One language.<br/>Every interface.</div><nav>${[
+    `<div class="sd-scope app-shell"><aside class="sidebar" aria-label="Showcase navigation"><a class="brand" href="#/foundations" aria-label="Slang Design home">${websiteLogo()}<span class="brand-design">design</span></a><div class="sidebar-intro">One language.<br/>Every interface.</div><nav>${[
       'System',
       'Examples',
     ]

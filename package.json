@@ -1,6 +1,6 @@
 {
   "name": "@bitspark/slang-design",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The shared visual language for Slang websites, studios and applications.",
   "type": "module",
   "license": "Apache-2.0",
@@ -19,7 +19,8 @@
     },
     "./styles.css": "./styles/index.css",
     "./tokens.css": "./styles/tokens.css",
-    "./tokens.json": "./tokens/tokens.json"
+    "./tokens.json": "./tokens/tokens.json",
+    "./logo/*": "./assets/logo/*"
   },
   "files": [
     "components",

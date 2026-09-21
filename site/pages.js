@@ -3,6 +3,7 @@ import { operators, sources, filterOperators } from './data.js';
 import tokens from '../tokens/tokens.json';
 import mark from '../assets/slang-mark.svg';
 import { examplePages } from './examples.js';
+import { brand } from './brand.js';
 
 export const eyebrow = (text) => `<div class="eyebrow"><span></span>${text}</div>`;
 export const link = (href, text, style = '') =>
@@ -89,4 +90,12 @@ function heritage() {
       '',
     )}</section><section><div class="section-heading"><div><span class="section-index">SOURCE INVENTORY</span><h2>Grounded in the work.</h2></div><p>Inspected September 2026.<br/>Private links require organization access.</p></div><div class="source-list">${sources.map((s) => `<article><div><a href="https://github.com/Bitspark/${s.name}/tree/${s.sha}" target="_blank" rel="noopener">${s.name} ${icon('external')}</a><span class="sd-badge">${s.access}</span></div><h3>${s.role}</h3><p>${s.detail}</p><code>${s.sha.slice(0, 7)}${s.file ? ' / ' + s.file : ''}</code></article>`).join('')}</div></section><div class="sd-callout research-note"><strong>Reconstruction, not a frozen snapshot.</strong><br/>The palette and type colors are recovered from source. Semantic roles, spacing, accessible states, and these example layouts are new. No legacy commercial template code, private infrastructure, customer data, or paid font/icon assets are included. The authentication service was also inspected; it provides backend behavior rather than a visual system.</div></div>`;
 }
-export const pages = { foundations, components, library, heritage, ...examplePages, operatorCards };
+export const pages = {
+  foundations,
+  components,
+  brand,
+  library,
+  heritage,
+  ...examplePages,
+  operatorCards,
+};

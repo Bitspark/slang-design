@@ -1,5 +1,6 @@
 import '../styles/index.css';
 import './showcase.css';
+import './brand.css';
 import '../components/index.js';
 import { operators, sources, filterOperators, calculate } from './data.js';
 import tokens from '../tokens/tokens.json';
@@ -54,6 +55,7 @@ const store = (key, value) => {
 const routes = [
   ['foundations', 'Overview', 'grid', 'System'],
   ['components', 'Components', 'layers', 'System'],
+  ['brand', 'Logo & brand', 'grid', 'System'],
   ['heritage', 'Origins & principles', 'time', 'System'],
   ['website', 'Product website', 'globe', 'Examples'],
   ['library', 'Operator library', 'grid', 'Examples'],
@@ -122,7 +124,7 @@ function shell() {
       )
       .join(
         '',
-      )}</nav><div class="sidebar-bottom"><div class="flow-dots"><i></i><span></span><i></i><span></span><i></i></div><p>Small pieces.<br/>Shared possibilities.</p><a href="https://github.com/Bitspark/slang-design" target="_blank" rel="noopener">Bitspark / Slang Design ${icon('external')}</a></div></aside><button class="nav-backdrop" aria-label="Close navigation" tabindex="-1"></button><div class="main-shell"><header class="topbar"><div class="topbar-left"><button class="sd-button sd-button--quiet sd-button--icon mobile-menu" aria-label="Open navigation" aria-expanded="false">${icon('menu')}</button><span class="breadcrumb">Design system <span>/</span> <b id="route-title">Overview</b></span></div><div class="topbar-actions"><span class="version">v0.1 <span>·</span> A shared foundation</span><button id="theme-toggle" class="sd-button sd-button--quiet sd-button--icon" aria-label="Switch to dark theme">${icon('moon')}</button><a class="source-link" href="https://github.com/Bitspark/slang-design" target="_blank" rel="noopener">View source ${icon('external')}</a></div></header><main id="main" tabindex="-1"></main><footer class="site-footer"><span>Slang Design <span class="footer-dot">/</span> Built from our shared history.</span><span>Open source. Open possibilities. <a href="https://github.com/Bitspark/slang-design">GitHub ↗</a></span></footer></div><div class="toast" role="status" aria-live="polite" aria-atomic="true"></div><dialog class="sd-dialog" id="detail-dialog"></dialog></div>`;
+      )}</nav><div class="sidebar-bottom"><div class="flow-dots"><i></i><span></span><i></i><span></span><i></i></div><p>Small pieces.<br/>Shared possibilities.</p><a href="https://github.com/Bitspark/slang-design" target="_blank" rel="noopener">Bitspark / Slang Design ${icon('external')}</a></div></aside><button class="nav-backdrop" aria-label="Close navigation" tabindex="-1"></button><div class="main-shell"><header class="topbar"><div class="topbar-left"><button class="sd-button sd-button--quiet sd-button--icon mobile-menu" aria-label="Open navigation" aria-expanded="false">${icon('menu')}</button><span class="breadcrumb">Design system <span>/</span> <b id="route-title">Overview</b></span></div><div class="topbar-actions"><span class="version">v0.2 <span>·</span> A shared foundation</span><button id="theme-toggle" class="sd-button sd-button--quiet sd-button--icon" aria-label="Switch to dark theme">${icon('moon')}</button><a class="source-link" href="https://github.com/Bitspark/slang-design" target="_blank" rel="noopener">View source ${icon('external')}</a></div></header><main id="main" tabindex="-1"></main><footer class="site-footer"><span>Slang Design <span class="footer-dot">/</span> Built from our shared history.</span><span>Open source. Open possibilities. <a href="https://github.com/Bitspark/slang-design">GitHub ↗</a></span></footer></div><div class="toast" role="status" aria-live="polite" aria-atomic="true"></div><dialog class="sd-dialog" id="detail-dialog"></dialog></div>`;
   document.querySelector('#theme-toggle').addEventListener('click', () => {
     const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;

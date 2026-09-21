@@ -44,7 +44,7 @@ Typography is self-hosted from Fontsource. Share Tech Mono is used only for tech
 - **Explicit semantics:** brand accents, data types, and feedback each have separate roles. A red string port is not an error.
 - **New semantic layer:** spacing, radii, control heights, focus, status backgrounds, and dark-mode adaptations are new decisions. They are not presented as historically exact.
 - **Legible graphs:** the source editor used 6 px connection strokes and tiny 80 × 46 nodes. The showcase uses thinner strokes and larger labeled nodes for modern documentation and demonstration contexts.
-- **Brand mark:** a clean SVG adaptation of the cloud mark, reconstructed from the viewed image. It is an adaptation, not a claim to reproduce the original vector artwork exactly.
+- **Brand mark:** a clean SVG adaptation of the cloud mark, reconstructed from the viewed image. The original opposing brackets, inset connector, and raised square are retained. Transparent surface variants, monochrome assets, and a Roboto outline wordmark are documented in [the logo guide](logo.md). It is an adaptation, not a claim to reproduce the original vector artwork exactly.
 - **Accessible by construction:** text remains readable without semantic color, native controls retain keyboard behavior, focus is visible, and motion can be reduced.
 
 ## Publication boundaries

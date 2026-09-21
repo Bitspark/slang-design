@@ -51,6 +51,6 @@ Give a meaningful standalone logo `alt="Slang"`. Use `alt=""` when adjacent text
 
 ## Artwork and attribution
 
-The light variant uses raspberry `#b21546`, petrol `#164968`, and blue `#1c6f9a`. The dark variant uses raspberry `#f29db9`, pale ink `#edf5f8`, and blue `#65b4d1`. These are explicit surface adaptations of the existing identity, not automatic recoloring based on a guessed background.
+The light variant uses raspberry `#b21546`, petrol `#164968`, and blue `#1c6f9a`. The dark variant uses rich raspberry `#d82d63`, saturated blue `#2698c3`, and cyan `#48bde0` in the symbol, with pale ink `#edf5f8` reserved for the lettering. The contained app icon uses the same saturated symbol colors. These are explicit surface adaptations of the existing identity, not automatic recoloring based on a guessed background.
 
 The lowercase wordmark comes from the bundled Roboto Medium outlines; see [Roboto's license](../assets/licenses/roboto.txt). The Slang name and mark identify Bitspark. See [NOTICE](../NOTICE) for attribution and brand-use terms.

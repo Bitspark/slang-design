@@ -44,7 +44,7 @@ Open `http://127.0.0.1:5176`. `npm run build` produces a static `dist/` site. `n
 The package is available from this Git repository; it has not been published to the npm registry.
 
 ```sh
-npm install github:Bitspark/slang-design#v0.2.0
+npm install github:Bitspark/slang-design#v0.2.1
 ```
 
 ```js

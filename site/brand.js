@@ -21,7 +21,7 @@ export function brand() {
       <div class="brand-downloads"><h2>For bright surfaces</h2><p>Use on white, paper, and pale workspaces.</p><div>${download(logoLight, 'slang-logo-light.svg', 'Wordmark SVG')}${download(markLight, 'slang-mark-light.svg', 'Symbol SVG')}</div></div>
     </section>
     <section class="brand-card">
-      <div class="brand-preview brand-surface-dark"><span class="brand-specimen-label">02 / ON DARK</span><img src="${logoDark}" width="356" height="128" alt="Slang logo in pale ink, raspberry, and blue on a petrol background"/><span class="brand-specimen-foot">Pale structure · luminous detail</span></div>
+      <div class="brand-preview brand-surface-dark"><span class="brand-specimen-label">02 / ON DARK</span><img src="${logoDark}" width="356" height="128" alt="Slang logo in saturated raspberry and blue with light lettering on a petrol background"/><span class="brand-specimen-foot">Saturated blue · rich raspberry</span></div>
       <div class="brand-downloads"><h2>For dark surfaces</h2><p>Use on petrol, charcoal, and dark workspaces.</p><div>${download(logoDark, 'slang-logo-dark.svg', 'Wordmark SVG')}${download(markDark, 'slang-mark-dark.svg', 'Symbol SVG')}</div></div>
     </section>
   </div>

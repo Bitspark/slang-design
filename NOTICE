@@ -1,0 +1,19 @@
+Slang Design
+Copyright 2026 Bitspark
+
+New source code and documentation are licensed under Apache-2.0.
+The Slang name and brand marks remain the identity of Bitspark; the source
+license does not grant permission to imply endorsement.
+
+Design research draws on Bitspark/slang-editor, Bitspark/slang-ui,
+Bitspark/slang.cloud, and Bitspark/bitspark.de. Exact source revisions and
+the distinction between recovered primitives and new work are documented
+in docs/research.md. Legacy application or commercial theme source is not
+included. The Slang cloud mark is a newly drawn, normalized SVG adaptation.
+
+Bundled fonts: Roboto, Roboto Slab, and Share Tech Mono, distributed via
+Fontsource. Roboto and Share Tech Mono use the SIL Open Font License 1.1;
+Roboto Slab uses Apache-2.0. The supplied copyright and license texts are
+in assets/licenses/.
+
+Icons and flow diagrams in this repository are newly drawn SVGs.

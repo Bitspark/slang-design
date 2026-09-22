@@ -18,7 +18,7 @@ The suffix describes the **background**, not the color of the logo. These files 
 | Reversed artwork on dark           | [slang-logo-white.svg](../assets/logo/slang-logo-white.svg) | [slang-mark-white.svg](../assets/logo/slang-mark-white.svg)         |
 | Uncontrolled background / app icon | —                                                           | [slang-mark-universal.svg](../assets/logo/slang-mark-universal.svg) |
 
-The eight light/dark/one-color files have transparent backgrounds. The universal app icon deliberately uses a charcoal tile with a contrasting border. `assets/slang-mark.svg` remains a compatibility copy of that app icon, and supplies the showcase favicon and navigation mark.
+The eight light/dark/one-color files have transparent backgrounds. The universal app icon deliberately uses a charcoal tile with a contrasting border. `assets/slang-mark.svg` remains a compatibility copy of that app icon and supplies the showcase favicon. The navigation uses the transparent wordmark matched to its surface.
 
 All visible artwork is made from SVG paths. The app icon additionally uses a rounded vector rectangle. The full logo's Roboto Medium lettering is outlined, so it renders without fonts installed and never falls back to a different typeface. There are no embedded bitmaps, linked images, scripts, or external resources. SVG editors can edit the individual fills and paths.
 
@@ -40,6 +40,53 @@ Use the URL that matches your component's surface. With plain static HTML, copy 
 ```
 
 Give a meaningful standalone logo `alt="Slang"`. Use `alt=""` when adjacent text already names Slang. Keep an accessible name on a linked logo, such as the home destination. Do not rely on CSS `currentColor` crossing into an external SVG image.
+
+## GitHub READMEs
+
+Use a `<picture>` with a dark-theme source and a light-theme fallback. GitHub selects the SVG that matches the reader's color mode. The artwork stays transparent and sharp at every size; no dark tile or CSS filter is needed.
+
+For another Slang repository, use the published Slang Design v0.2.1 artwork at its fixed commit:
+
+```html
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="
+        https://raw.githubusercontent.com/Bitspark/slang-design/a16912ee2938ad9202380c88ce486adf893e5ccf/assets/logo/slang-logo-dark.svg
+      "
+    />
+    <img
+      src="https://raw.githubusercontent.com/Bitspark/slang-design/a16912ee2938ad9202380c88ce486adf893e5ccf/assets/logo/slang-logo-light.svg"
+      alt="Slang"
+      width="280"
+    />
+  </picture>
+</p>
+```
+
+For a standalone symbol, use the corresponding mark files:
+
+```html
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://raw.githubusercontent.com/Bitspark/slang-design/a16912ee2938ad9202380c88ce486adf893e5ccf/assets/logo/slang-mark-dark.svg
+    "
+  />
+  <img
+    src="https://raw.githubusercontent.com/Bitspark/slang-design/a16912ee2938ad9202380c88ce486adf893e5ccf/assets/logo/slang-mark-light.svg"
+    alt="Slang"
+    width="48"
+    height="48"
+  />
+</picture>
+```
+
+These URLs share one approved asset source across repositories. Keep both variants pinned to the same revision when updating them. In this repository, use relative paths such as `assets/logo/slang-logo-light.svg` from the root README. Renderers without picture support use the light `<img>` fallback.
+
+For an application with its own theme switch or a surface that differs from the page theme, select the file based on the actual component background as described above.
 
 ## Size and clear space
 

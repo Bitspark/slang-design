@@ -1,5 +1,12 @@
 # Slang Design
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/slang-logo-dark.svg">
+    <img src="assets/logo/slang-logo-light.svg" alt="Slang" width="280">
+  </picture>
+</p>
+
 **Connected by design.** The shared visual language for Slang websites, studios, applications, and documentation.
 
 [Explore the live showcase](https://bitspark.github.io/slang-design/) · [Design research](docs/research.md) · [Using the system](docs/usage.md) · [Accessibility](docs/accessibility.md)
@@ -23,8 +30,6 @@ Slang Design reconstructs the later Slang cloud and web identity: petrol blue, r
 The examples demonstrate interfaces, not a hosted Slang engine. Studio multiplication runs locally. Cloud actions only change fictional browser-local data. The actual language runtime and public playground live in [Bitspark/slang](https://github.com/Bitspark/slang) and [tryslang.com](https://tryslang.com/).
 
 ## Logo assets
-
-![Slang logo on light and dark backgrounds](docs/images/logo-preview.png)
 
 [Preview the logo family](https://bitspark.github.io/slang-design/#/brand) or see the [logo guide](docs/logo.md). Nine SVG downloads include transparent light/dark logos and symbols, one-color artwork, and an app icon. Lettering is outlined, with no font dependency. Import assets through `@bitspark/slang-design/logo/*.svg`.
 

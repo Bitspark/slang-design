@@ -1758,14 +1758,11 @@ pre {
   background: var(--sd-surface);
   border-radius: 5px;
 }
-.heritage-mark > img {
-  width: 70px;
-  height: 70px;
+.heritage-logo {
+  width: min(250px, 100%);
 }
-.heritage-mark > span {
-  font-size: 45px;
-  font-weight: 500;
-  letter-spacing: -2px;
+.heritage-logo .website-logo {
+  width: 100%;
 }
 .heritage-mark > p {
   font-size: 11px;

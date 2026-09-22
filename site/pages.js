@@ -1,7 +1,7 @@
 import { icon, safe, state } from './app.js';
 import { operators, sources, filterOperators } from './data.js';
 import tokens from '../tokens/tokens.json';
-import mark from '../assets/slang-mark.svg';
+import { websiteLogo } from './website-logo.js';
 import { examplePages } from './examples.js';
 import { brand } from './brand.js';
 
@@ -67,7 +67,7 @@ function library() {
 }
 
 function heritage() {
-  return `<div class="page">${heading('ORIGINS / DESIGN RESEARCH', 'A new chapter. The same language.', 'Reconstructed from the Slang family’s actual source styles, layouts, and visual assets.')}<section class="heritage-intro"><div><span class="section-index">THE CLOUD & WEB FAMILY</span><h2>Clear. Spacious.<br/><em>Connected.</em></h2><p>The later Slang identity brings together petrol blue, raspberry, light slab-serif headlines, pale canvases, and meaningful connections. This is the direction of Slang Design.</p></div><div class="heritage-mark"><img src="${mark}" alt="Reconstructed Slang cloud mark"/><span>slang</span><div class="era-palette"><i style="background:#164968"></i><i style="background:#1c6f9a"></i><i style="background:#b21546"></i><i style="background:#fcfcfc"></i></div><p>Reconstructed cloud mark<br/><small>Original proportions adapted to a clean SVG grid.</small></p></div></section><section class="principle-list">${[
+  return `<div class="page">${heading('ORIGINS / DESIGN RESEARCH', 'A new chapter. The same language.', 'Reconstructed from the Slang family’s actual source styles, layouts, and visual assets.')}<section class="heritage-intro"><div><span class="section-index">THE CLOUD & WEB FAMILY</span><h2>Clear. Spacious.<br/><em>Connected.</em></h2><p>The later Slang identity brings together petrol blue, raspberry, light slab-serif headlines, pale canvases, and meaningful connections. This is the direction of Slang Design.</p></div><div class="heritage-mark"><div class="heritage-logo" role="img" aria-label="Slang">${websiteLogo()}</div><div class="era-palette"><i style="background:#164968"></i><i style="background:#1c6f9a"></i><i style="background:#b21546"></i><i style="background:#fcfcfc"></i></div><p>Reconstructed cloud mark<br/><small>Original proportions adapted to a clean SVG grid.</small></p></div></section><section class="principle-list">${[
     [
       'Show the relationships',
       'Use real diagrams and clear labels. Connections are the subject, not background decoration.',

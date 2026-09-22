@@ -1,6 +1,6 @@
 # Slang logo and brand
 
-[Preview and download the artwork](https://bitspark.github.io/slang-design/#/brand).
+[Preview and download the artwork](https://design.slang.bitspark.com/#/brand).
 
 ![Slang logo on light and dark backgrounds](images/logo-preview.png)
 

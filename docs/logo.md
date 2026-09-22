@@ -1,10 +1,26 @@
-# Slang logo
+# Slang logo and brand
 
 [Preview and download the artwork](https://bitspark.github.io/slang-design/#/brand).
 
 ![Slang logo on light and dark backgrounds](images/logo-preview.png)
 
 The mark preserves the later Slang cloud logo's opposing brackets, inset connector, and raised square. It is redrawn on a clean coordinate grid from `slang.cloud/src/assets/logo.png` at revision `c5d49c23f044f93cf6e1b032f0276c5504942980`. The light/dark palettes and Roboto wordmark are adaptations for the shared design system.
+
+## Name and capitalization
+
+**Slang** is the canonical written name of the language and product. Use it in prose, headings, navigation, buttons, onboarding, help text, error messages, and accessible names.
+
+| Context                    | Convention                                         | Examples                                                              |
+| -------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| Product and language names | Capitalize the initial S.                          | Slang, Slang Design, Slang Editor, Slang Run, Built with Slang        |
+| Logo artwork               | Keep the approved lowercase wordmark.              | The outlined `slang` lettering in the supplied SVGs                   |
+| Technical identifiers      | Preserve the identifier's exact spelling and case. | `slang`, `slangd`, `@bitspark/slang-design`, `slang.run`, `SLANG_DIR` |
+
+Use “Welcome to Slang” and “Update your Slang version,” rather than “Welcome to SLANG” or “Update your slang version.” Do not use **SLANG** as an alternative brand name or treat the name as an acronym.
+
+The lowercase wordmark is a visual choice; its accessible name is still “Slang.” References to commands, packages, repositories, domains, filenames, environment variables, and other identifiers retain their exact case. Use code formatting for technical identifiers where appropriate, such as “Run `slang` to execute a blueprint.”
+
+If a layout calls for an all-capital label, keep “Slang” in the source text and apply capitalization through presentation styling. That treatment does not change the written name.
 
 ## Choose by background
 

@@ -27,6 +27,8 @@ Do not copy private infrastructure or commercial theme assets into this public r
 
 ## Publishing
 
+The canonical showcase is [design.slang.bitspark.com](https://design.slang.bitspark.com/). See the [deployment runbook](deployment.md) for hosting configuration and rollback.
+
 GitHub Pages uses the `Validate and publish showcase` workflow. Every push to `main` runs checks and builds the site before uploading a Pages artifact. `pull_request` runs validation without deployment. Pages uses relative assets and hash routes, so deep links do not require server rewrites.
 
 Version the source package and tag stable revisions. The Git package can be installed directly from a version tag. Publishing to the npm registry is a separate operation and is not configured by this repository. Keep `package-lock.json` committed for reproducible showcase builds.

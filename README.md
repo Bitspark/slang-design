@@ -9,29 +9,29 @@
 
 **Connected by design.** The shared visual language for Slang websites, studios, applications, and documentation.
 
-[Explore the live showcase](https://bitspark.github.io/slang-design/) · [Design research](docs/research.md) · [Using the system](docs/usage.md) · [Accessibility](docs/accessibility.md)
+[Explore the live showcase](https://design.slang.bitspark.com/) · [Design research](docs/research.md) · [Using the system](docs/usage.md) · [Accessibility](docs/accessibility.md)
 
 Slang Design reconstructs the later Slang cloud and web identity: petrol blue, raspberry accents, Roboto and Roboto Slab, pale workspaces, and colored data connections. It brings those ideas into a small, framework-independent system with explicit tokens, native HTML recipes, and optional custom elements.
 
 ## Explore
 
-| View                                                                       | What it demonstrates                                                             |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Foundations](https://bitspark.github.io/slang-design/#/foundations)       | Color, typography, semantic data types, and the visual language                  |
-| [Components](https://bitspark.github.io/slang-design/#/components)         | Actions, forms, feedback, type labels, flow canvas, and token export             |
-| [Logo & brand](https://bitspark.github.io/slang-design/#/brand)            | Vector logos for light/dark surfaces, symbols, monochrome artwork, and downloads |
-| [Origins & principles](https://bitspark.github.io/slang-design/#/heritage) | Source inventory, provenance, and design decisions                               |
-| [Product website](https://bitspark.github.io/slang-design/#/website)       | Diagram-led marketing and a clear first action                                   |
-| [Operator library](https://bitspark.github.io/slang-design/#/library)      | Search, category filtering, empty states, and operator details                   |
-| [Visual studio](https://bitspark.github.io/slang-design/#/studio)          | Selectable graph, inspector, editable inputs, calculation, and output console    |
-| [Documentation](https://bitspark.github.io/slang-design/#/docs)            | Concepts, diagrams, reference tables, and in-page navigation                     |
-| [Cloud workspace](https://bitspark.github.io/slang-design/#/cloud)         | Metrics, deployment table, status, creation dialog, and local demo state         |
+| View                                                                 | What it demonstrates                                                             |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [Foundations](https://design.slang.bitspark.com/#/foundations)       | Color, typography, semantic data types, and the visual language                  |
+| [Components](https://design.slang.bitspark.com/#/components)         | Actions, forms, feedback, type labels, flow canvas, and token export             |
+| [Logo & brand](https://design.slang.bitspark.com/#/brand)            | Vector logos for light/dark surfaces, symbols, monochrome artwork, and downloads |
+| [Origins & principles](https://design.slang.bitspark.com/#/heritage) | Source inventory, provenance, and design decisions                               |
+| [Product website](https://design.slang.bitspark.com/#/website)       | Diagram-led marketing and a clear first action                                   |
+| [Operator library](https://design.slang.bitspark.com/#/library)      | Search, category filtering, empty states, and operator details                   |
+| [Visual studio](https://design.slang.bitspark.com/#/studio)          | Selectable graph, inspector, editable inputs, calculation, and output console    |
+| [Documentation](https://design.slang.bitspark.com/#/docs)            | Concepts, diagrams, reference tables, and in-page navigation                     |
+| [Cloud workspace](https://design.slang.bitspark.com/#/cloud)         | Metrics, deployment table, status, creation dialog, and local demo state         |
 
-The examples demonstrate interfaces, not a hosted Slang engine. Studio multiplication runs locally. Cloud actions only change fictional browser-local data. The actual language runtime and public playground live in [Bitspark/slang](https://github.com/Bitspark/slang) and [tryslang.com](https://tryslang.com/).
+The examples demonstrate interfaces, not a hosted Slang engine. Studio multiplication runs locally. Cloud actions only change fictional browser-local data. The working studio is [slang.run](https://slang.run/); the product website is [slang.bitspark.com](https://slang.bitspark.com/). The language runtime lives in [Bitspark/slang](https://github.com/Bitspark/slang).
 
 ## Logo assets
 
-[Preview the logo family](https://bitspark.github.io/slang-design/#/brand) or see the [logo guide](docs/logo.md). Nine SVG downloads include transparent light/dark logos and symbols, one-color artwork, and an app icon. Lettering is outlined, with no font dependency. Import assets through `@bitspark/slang-design/logo/*.svg`.
+[Preview the logo family](https://design.slang.bitspark.com/#/brand) or see the [logo guide](docs/logo.md). Nine SVG downloads include transparent light/dark logos and symbols, one-color artwork, and an app icon. Lettering is outlined, with no font dependency. Import assets through `@bitspark/slang-design/logo/*.svg`.
 
 ## Run locally
 
@@ -90,6 +90,6 @@ npm run build        # Verify generated tokens and build the showcase
 npm run check        # Format, test, build, and inspect the package
 ```
 
-GitHub Actions validates pull requests. Changes on `main` also deploy the showcase to GitHub Pages. Pages must use **GitHub Actions** as its build source. See [contributing](docs/contributing.md) for the browser verification checklist.
+GitHub Actions validates pull requests. Changes on `main` also deploy the showcase to GitHub Pages. Pages must use **GitHub Actions** as its build source. See the [deployment runbook](docs/deployment.md) for domain ownership, DNS/TLS, verification and rollback, and [contributing](docs/contributing.md) for the browser verification checklist.
 
 New code and documentation: Apache-2.0. Font license texts and brand attribution are included in [NOTICE](NOTICE) and `assets/licenses/`.

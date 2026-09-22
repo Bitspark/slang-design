@@ -2,6 +2,8 @@
 
 Keep changes rooted in the later Slang cloud/web identity: petrol, raspberry, Roboto/Roboto Slab, pale workspaces, and typed connections. Preserve the distinction between brand, data type, and status colors.
 
+Follow the [name and capitalization convention](logo.md#name-and-capitalization): write **Slang** in copy, retain the lowercase wordmark, and preserve the exact case of technical identifiers.
+
 ## Workflow
 
 1. Change source tokens, recipes, components, or example pages.

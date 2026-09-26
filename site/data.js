@@ -1,3 +1,10 @@
+// Bitspark's imprint and privacy policy, published on the product website.
+// The policy's #design section covers this site.
+export const LEGAL = {
+  imprint: 'https://slang.bitspark.com/imprint/',
+  privacy: 'https://slang.bitspark.com/privacy/#design',
+};
+
 export const operators = [
   {
     name: 'Multiply',

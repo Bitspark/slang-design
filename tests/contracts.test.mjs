@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { calculate, filterOperators } from '../site/data.js';
+import { calculate, filterOperators, LEGAL } from '../site/data.js';
 
 const tokens = JSON.parse(
   await readFile(new URL('../tokens/tokens.json', import.meta.url), 'utf8'),
@@ -76,4 +76,17 @@ test('custom elements can be imported by server-rendered applications without a 
   assert.equal(typeof SlangType, 'function');
   assert.equal(typeof SlangFlow, 'function');
   assert.doesNotThrow(() => registerSlangElements());
+});
+test('every view links the imprint and privacy policy, with and without JavaScript', async () => {
+  const app = await readFile(new URL('../site/app.js', import.meta.url), 'utf8');
+  const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+  const noscript = html.match(/<noscript[\s\S]*<\/noscript/)[0];
+  assert.match(
+    app,
+    /<footer class="site-footer">.*\$\{LEGAL\.imprint\}.*\$\{LEGAL\.privacy\}.*<\/footer>/,
+  );
+  for (const url of Object.values(LEGAL)) {
+    assert.match(url, /^https:\/\/slang\.bitspark\.com\//);
+    assert.ok(noscript.includes(`href="${url}"`), `noscript lacks ${url}`);
+  }
 });

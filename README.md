@@ -1,4 +1,4 @@
-# Slang Design
+# slang-design
 
 <p align="center">
   <picture>
@@ -11,7 +11,7 @@
 
 [Explore the live showcase](https://design.slang.bitspark.com/) · [Design research](docs/research.md) · [Using the system](docs/usage.md) · [Accessibility](docs/accessibility.md)
 
-Slang Design reconstructs the later Slang cloud and web identity: petrol blue, raspberry accents, Roboto and Roboto Slab, pale workspaces, and colored data connections. It brings those ideas into a small, framework-independent system with explicit tokens, native HTML recipes, and optional custom elements.
+`slang-design` reconstructs the later Slang cloud and web identity: petrol blue, raspberry accents, Roboto and Roboto Slab, pale workspaces, and colored data connections. It brings those ideas into a small, framework-independent system with explicit tokens, native HTML recipes, and optional custom elements.
 
 ## Explore
 

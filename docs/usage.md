@@ -1,4 +1,4 @@
-# Using Slang Design
+# Using slang-design
 
 ## Import only what you need
 

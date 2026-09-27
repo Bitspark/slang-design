@@ -10,11 +10,14 @@ The mark preserves the later Slang cloud logo's opposing brackets, inset connect
 
 **Slang** is the canonical written name of the language and product. Use it in prose, headings, navigation, buttons, onboarding, help text, error messages, and accessible names.
 
-| Context                    | Convention                                         | Examples                                                              |
-| -------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
-| Product and language names | Capitalize the initial S.                          | Slang, Slang Design, Slang Editor, Slang Run, Built with Slang        |
-| Logo artwork               | Keep the approved lowercase wordmark.              | The outlined `slang` lettering in the supplied SVGs                   |
-| Technical identifiers      | Preserve the identifier's exact spelling and case. | `slang`, `slangd`, `@bitspark/slang-design`, `slang.run`, `SLANG_DIR` |
+| Context                   | Convention                                         | Examples                                                              |
+| ------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| Product and language name | Capitalize the initial S.                          | Slang, Built with Slang                                               |
+| Components                | Write the repository name, in lowercase.           | `slang-design`, `slang-editor`, `slang-studio`, `slang-infra`         |
+| Logo artwork              | Keep the approved lowercase wordmark.              | The outlined `slang` lettering in the supplied SVGs                   |
+| Technical identifiers     | Preserve the identifier's exact spelling and case. | `slang`, `slangd`, `@bitspark/slang-design`, `slang.run`, `SLANG_DIR` |
+
+A Slang component has no separate product name: write it as its repository name, as decided in [slang-ecosystem decision 0007](https://github.com/Bitspark/slang-ecosystem/blob/main/docs/decisions/0007-repository-names.md#writing-the-names).
 
 Use “Welcome to Slang” and “Update your Slang version,” rather than “Welcome to SLANG” or “Update your slang version.” Do not use **SLANG** as an alternative brand name or treat the name as an acronym.
 
@@ -61,7 +64,7 @@ Give a meaningful standalone logo `alt="Slang"`. Use `alt=""` when adjacent text
 
 Use a `<picture>` with a dark-theme source and a light-theme fallback. GitHub selects the SVG that matches the reader's color mode. The artwork stays transparent and sharp at every size; no dark tile or CSS filter is needed.
 
-For another Slang repository, use the published Slang Design v0.2.1 artwork at its fixed commit:
+For another Slang repository, use the published `slang-design` v0.2.1 artwork at its fixed commit:
 
 ```html
 <p align="center">

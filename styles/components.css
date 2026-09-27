@@ -1,4 +1,4 @@
-/* Scoped recipes: importing Slang Design never resets a host application's body. */
+/* Scoped recipes: importing slang-design never resets a host application's body. */
 .sd-scope {
   font-family: var(--sd-font-body);
   color: var(--sd-text);
